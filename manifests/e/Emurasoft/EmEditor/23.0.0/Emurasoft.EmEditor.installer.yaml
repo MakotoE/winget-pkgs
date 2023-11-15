@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.0.0.schema.json
+
+PackageIdentifier: Emurasoft.EmEditor
+PackageVersion: 23.0.0
+MinimumOSVersion: 10.0.0.0
+Platform: 
+- Windows.Desktop
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+Installers:
+- Architecture: x64
+  InstallerType: msi
+  InstallerUrl: https://download.emeditor.info/emed64_23.0.0.msi
+  InstallerSha256: f90df15bf8f67eb7421515999181ececa1e065e7550f1d9c56c1e2567298f89e
+  ProductCode: '{1AD63EAE-CD31-4EC8-9555-514F23E526B4}'
+  Scope: user
+  InstallerLocale: en-US
+  UpgradeBehavior: install
+- Architecture: x86
+  InstallerType: msi
+  InstallerUrl: https://download.emeditor.info/emed32_23.0.0.msi
+  InstallerSha256: d1fb9bac0d3bbef6f2a2f1066aec5ff9f92a05d1e183d8c84b7894f0e5c29cc7
+  ProductCode: '{3286A96B-4FD9-4978-8E03-289C9CF52216}'
+  Scope: user
+  InstallerLocale: en-US
+  UpgradeBehavior: install
+ManifestType: installer
+ManifestVersion: 1.0.0
